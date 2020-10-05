@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  background: url("../images/bg-desktop.png") no-repeat center center/cover;
+  color: hsl(243, 100%, 93%);
+  width: 100%;
+  height: 100vh;
+}
+
+.main-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 15% auto;
+}
+
+.file {
+  background: hsl(228, 56%, 26%);
+  border-radius: 5px 50px 5px 5px;
+  padding: 25px 20px;
+  width: 30%;
+}
+
+.files {
+  margin-top: 15px;
+  display: flex;
+}
+
+.file1 {
+  background: hsl(229, 57%, 11%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.file2 {
+  background: hsl(229, 57%, 11%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.file3 {
+  background: hsl(229, 57%, 11%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.storage {
+  margin-left: 20px;
+  padding: 20px;
+  background: hsl(228, 56%, 26%);
+  border-radius: 8px;
+  width: 70%;
+}
+.bar {
+  background: hsl(229, 57%, 11%);
+  height: 15px;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 15px;
+  width: 81.5%;
+  background: linear-gradient(to right, rgb(196, 30, 30), rgb(240, 240, 66));
+  border-radius: 10px;
+}
+
+.bubble {
+  position: absolute;
+  right: -60%;
+}
+.popup {
+  position: relative;
+  font-family: sans-serif;
+  line-height: 5px;
+  width: 120px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.popup :before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid #fff;
+  border-right: 8px solid transparent;
+  border-top: 5px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -20px;
+}
+
+.digits {
+  position: relative;
+  margin-top: 0.5rem;
+}
+
+.dig1 {
+  position: absolute;
+  left: 5%;
+}
+
+.dig2 {
+  position: absolute;
+  right: 5%;
+}
+
+/*footer*/
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution .fa-heart {
+  color: red;
+}
+
+@media (max-width: 655px) {
+  body {
+    background: url("../images/bg-mobile.png") no-repeat center center/cover;
+  }
+
+  .main-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin-top: 15%;
+  }
+
+  .file {
+    width: 50%;
+  }
+
+  .storage {
+    margin-top: 20px;
+  }
+}
+
+/* I'll leave it here i think im done*/
